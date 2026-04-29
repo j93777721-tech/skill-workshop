@@ -1,4 +1,4 @@
-import { ALL_SPECS } from './specs';
+import { ALL_SPECS } from './specs.js';
 
 export function evaluatePrompt(idea: string, refMaterials: string[]): string {
   const refSection = refMaterials.length > 0

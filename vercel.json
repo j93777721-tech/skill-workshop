@@ -1,7 +1,13 @@
 {
   "rewrites": [
-    { "source": "/api/validate/fix", "destination": "/api/validate-fix" },
-    { "source": "/((?!api).*)", "destination": "/" }
+    {
+      "source": "/api/validate/fix",
+      "destination": "/api/validate-fix"
+    },
+    {
+      "source": "/((?!api).*)",
+      "destination": "/"
+    }
   ],
   "framework": "vite"
 }

@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { syncChat } from '../lib/dashscope';
-import { evaluatePrompt } from '../lib/prompts-generate';
+import { syncChat } from '../lib/dashscope.js';
+import { evaluatePrompt } from '../lib/prompts-generate.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });

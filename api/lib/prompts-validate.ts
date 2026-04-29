@@ -1,4 +1,4 @@
-import { ALL_SPECS } from './specs';
+import { ALL_SPECS } from './specs.js';
 
 export function validatePrompt(skillContent: string, references: string[]): string {
   const refSection = references.length > 0
