@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+.markdown-report h2 { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1e293b; }
+.markdown-report h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #334155; }
+.markdown-report p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown-report ul, .markdown-report ol { margin-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown-report li { margin-bottom: 0.25rem; line-height: 1.6; }
+.markdown-report code { background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.88em; color: #6366f1; }
+.markdown-report pre { background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 0.75rem 0; }
+.markdown-report pre code { background: none; color: inherit; padding: 0; }
+.markdown-report strong { font-weight: 600; }
+.markdown-report blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 0.75rem 0; }
+
+/* Table styles */
+.markdown-report table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0.75rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9em;
+}
+.markdown-report thead { background: #f8fafc; }
+.markdown-report th {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+.markdown-report td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.markdown-report tbody tr:last-child td { border-bottom: none; }
+.markdown-report tbody tr:hover { background: #f8fafc; }
+/* First column (# number) narrow */
+.markdown-report td:first-child,
+.markdown-report th:first-child { width: 2rem; text-align: center; color: #94a3b8; }
